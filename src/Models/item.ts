@@ -1,5 +1,7 @@
+
 export interface Item{
-  cedula:string
+  pedido: string;
+  costo: string;
   nombre:string;
   apellido:string;
   id:string;

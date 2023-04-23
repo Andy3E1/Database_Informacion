@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Registro
+     LA MANTECA🔥
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,26 +9,31 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Registro</ion-title>
+      <ion-title size="large">REGISTRO</ion-title>
     </ion-toolbar>
   </ion-header>
 
 <ion-list class="list-formulario">
   <ion-item>
-    <ion-input type="text" placeholder="Cedula" [(ngModel)]="newPersona.cedula"></ion-input>
+    <ion-input type="text" placeholder="Nombre🧑" [(ngModel)]="newPersona.nombre"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="Nombre" [(ngModel)]="newPersona.nombre"></ion-input>
+    <ion-input type="text" placeholder="Apellido👩" [(ngModel)]="newPersona.apellido"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="Apellido" [(ngModel)]="newPersona.apellido"></ion-input>
+    <ion-input type="text" placeholder="Pedido🍔" [(ngModel)]="newPersona.pedido"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="Costo💸" [(ngModel)]="newPersona.costo"></ion-input>
   </ion-item>
   </ion-list>
+
 <ion-list>
-  <ion-item *ngFor="let p of Personas" >
-    <ion-label>{{p.cedula}}</ion-label>
-    <ion-label>{{p.nombre}}</ion-label>
+  <ion-item *ngFor="let p of Personas"  >
+    <ion-label> {{ p.nombre }}</ion-label>
     <ion-label>{{p.apellido}}</ion-label>
+    <ion-label>{{p.pedido}}</ion-label>
+    <ion-label>{{p.costo}}</ion-label>
     <ion-button (click)="delete(p)" color="danger" >
       <ion-icon slot="icon-only" name="close-circle-outline" ></ion-icon>
     </ion-button>
