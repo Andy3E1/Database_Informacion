@@ -15,13 +15,14 @@ import { CommonModule } from '@angular/common';
   imports: [IonicModule,FormsModule,CommonModule],
 })
 export class HomePage {
+  
   private enlace:string = 'Personas';
   public Personas:Item[]=[];
   public newPersona:Item={
-    pedido: '',
+    pedido:'',
+    rating: '',
     costo: '',
     nombre: '',
-    apellido: '',
     id: ''
   };
   constructor(private bd:BdService, private toast:ToastService, private load:LoadingService) {
@@ -57,10 +58,10 @@ export class HomePage {
 
   clean(){
     this.newPersona.id="";
-    this.newPersona.pedido="";
+    this.newPersona.rating="";
     this.newPersona.costo="";
     this.newPersona.nombre="";
-    this.newPersona.apellido="";
+    this.newPersona.pedido="";
     }
     
   }

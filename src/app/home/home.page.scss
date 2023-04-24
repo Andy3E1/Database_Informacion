@@ -30,3 +30,36 @@
   margin-bottom: 20px;
   border: 1px solid #fff;
 }
+ion-title {
+text-align: center;
+}
+ion-card{
+  width: 35%;
+  float: left;
+}
+.comida{
+  width: 50%;
+  height: auto;
+  box-shadow: 2px 2px 5px #999;
+
+}
+#img1{
+  width: 100%;
+}
+.btn1{
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .comida{
+    width: 100%;
+  }
+  .btn1{
+    width: 80%;
+  }
+  ion-card{
+    width: 40%;
+  }
+  ion-list{
+    width: 100%;
+  }
+}

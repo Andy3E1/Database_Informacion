@@ -1,9 +1,8 @@
-
 export interface Item{
-  pedido: string;
+  rating: string;
   costo: string;
   nombre:string;
-  apellido:string;
+  pedido:string;
   id:string;
 }
 
