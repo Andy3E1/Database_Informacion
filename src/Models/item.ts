@@ -4,6 +4,7 @@ export interface Item{
   nombre:string;
   pedido:string;
   id:string;
+imagen:string;
 }
 
 

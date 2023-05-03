@@ -1,5 +1,5 @@
 import { BdService } from './../../Services/bd.service';
-import { Component } from '@angular/core';
+import { Component, IterableDiffers } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { Item } from 'src/Models/item';
 import { FormsModule } from '@angular/forms';
@@ -18,12 +18,14 @@ export class HomePage {
   
   private enlace:string = 'Personas';
   public Personas:Item[]=[];
+
   public newPersona:Item={
     pedido:'',
     rating: '',
     costo: '',
     nombre: '',
-    id: ''
+    id: '',
+    imagen:''
   };
   constructor(private bd:BdService, private toast:ToastService, private load:LoadingService) {
   }
@@ -33,6 +35,7 @@ export class HomePage {
     });
   }
   save(){
+    
     this.load.presentLoading();
     this.newPersona.id=this.bd.createId(this.enlace);
     const data = this.newPersona;
@@ -43,6 +46,7 @@ export class HomePage {
     }).catch(()=>{
       this.toast.showToast("Error al guardar","danger","sad-outline");
     });
+    
   }
 
   delete(p:Item){
@@ -63,6 +67,6 @@ export class HomePage {
     this.newPersona.nombre="";
     this.newPersona.pedido="";
     }
-    
+
   }
 
