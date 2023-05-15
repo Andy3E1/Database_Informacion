@@ -1,99 +1,59 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-     LA MANTECA🔥
+      🌱EcuadorDiverso
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" >
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">LA MANTECA🔥</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <section class="comida">
-  <!---->
-  <ion-card>
-    <img id="img1" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hamburguesa-1590595900.jpg?crop=0.672xw:0.998xh;0.227xw,0.00244xh&resize=1200:*"/>
-    <ion-card-header>
-      <ion-card-title>Hamburguesa </ion-card-title>
-      <ion-card-subtitle>5$ ⭐⭐⭐⭐⭐</ion-card-subtitle>
-      <ion-button class="btn1" (click)="save()">Añadir</ion-button>
-    </ion-card-header>
-  </ion-card>
-    <!---->
-  <ion-card>
-    <img id="img1" src="https://cdn0.recetasgratis.net/es/posts/8/3/5/salchipapas_74538_600_square.jpg" />
-    <ion-card-header>
-      <ion-card-title>Salchipapa</ion-card-title>
-      <ion-card-subtitle>2$⭐⭐⭐</ion-card-subtitle>
-      <ion-button class="btn1" (click)="save()">Añadir</ion-button>
-    </ion-card-header>
-  </ion-card>
-  <!---->
-  <ion-card>
-    <img id="img1" src="https://comidaecuatoriana.com.es/wp-content/uploads/2020/04/seco-ecuatoriano.jpg" />
-    <ion-card-header>
-      <ion-card-title>Seco de Carne</ion-card-title>
-      <ion-card-subtitle>7$⭐⭐⭐⭐</ion-card-subtitle>
-      <ion-button class="btn1" (click)="save()">Añadir</ion-button>
-    </ion-card-header>
-  </ion-card>
-    <!---->
-  <ion-card>
-    <img id="img1" src="https://mccain.com.mx/wp-content/uploads/2021/08/Papas-Tradicionales-al-Chilli.jpg" />
-    <ion-card-header>
-      <ion-card-title>Papas con chili</ion-card-title>
-      <ion-card-subtitle>5$⭐⭐⭐⭐</ion-card-subtitle>
-      <ion-button class="btn1" (click)="save()">Añadir</ion-button>
-    </ion-card-header>
-  </ion-card>
-   <!---->
-   <ion-card>
-    <img id="img1" src="https://funwithoutfodmaps.com/wp-content/uploads/2022/07/Low-FODMAP-Beef-Tacos-Square.jpg" />
-    <ion-card-header>
-      <ion-card-title>Tacos</ion-card-title>
-      <ion-card-subtitle>2$⭐⭐⭐</ion-card-subtitle>
-      <ion-button class="btn1" (click)="save()">Añadir</ion-button>
-    </ion-card-header>
-  </ion-card>
-    <!---->
-  <ion-card>
-    <img id="img1" src="https://www.gourmet.cl/wp-content/uploads/2016/09/Chuletas-con-salsa-BBQ.jpg-editada-507x458.jpg" />
-    <ion-card-header>
-      <ion-card-title>Chuleta</ion-card-title>
-      <ion-card-subtitle>10$⭐⭐⭐⭐⭐</ion-card-subtitle>
-      <ion-button class="btn1" (click)="save()">Añadir</ion-button>
-    </ion-card-header>
-  </ion-card>
-</section>
-    <!---->
-    
-<ion-list class="list-formulario">
-  <ion-item>
-    <ion-input type="text" placeholder="Nombre🧑" [(ngModel)]="newPersona.nombre"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input type="text" placeholder="Rating⭐" [(ngModel)]="newPersona.rating"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input type="text" placeholder="Pedido🍔" [(ngModel)]="newPersona.pedido"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input type="text" placeholder="Costo💸" [(ngModel)]="newPersona.costo"></ion-input>
-  </ion-item>
-  </ion-list>
-<!---->
-<ion-list>
-  <ion-item *ngFor="let p of Personas"  >
-    <ion-label>{{p.nombre}}</ion-label>
-    <ion-label>{{p.rating}}</ion-label>
-    <ion-label>{{p.costo}}</ion-label>
-    <ion-label>{{p.pedido}}</ion-label>
-    <ion-button (click)="delete(p)" color="danger" >
-      <ion-icon slot="icon-only" name="close-circle-outline" ></ion-icon>
-    </ion-button>
-  </ion-item>
-</ion-list>
+<ion-content>
+  <div class="container">
+    <h2>Características de la flora y fauna del Ecuador</h2>
+    <p>La riqueza de biodiversidad que presenta Ecuador, lo ha llevado a ser clasificado, según el Fondo Mundial para la Naturaleza (WWF, por sus siglas en inglés), como el octavo país a nivel mundial en cuanto a diversidad de especies. La vasta variedad de especies se debe, en parte, a la pluralidad de ecosistemas que el país posee. Para dimensionar la diversidad de paisajes de este país, en el siguiente listado, mencionaremos las 4 grandes regiones geográficas del Ecuador y los ecosistemas que se hallan en cada una de ellas.
+
+      Región amazónica: dividida en la alta Amazonía y la llanura amazónica.
+      Región andina: allí se pueden encontrar montes, valles, lagunas y cumbres nevadas. Aquí puedes leer acerca de la Región Andina: características, flora y fauna.
+      Región litoral: conformada por llanuras, cuencas sedimentarias, piedemonte y una cordillera de escasa altura.
+      Región insular: se trata de un archipiélago de origen volcánico con ecosistemas terrestres y marinos interrelacionados.</p>
+      <div class="image-container">
+      <img src="https://i.pinimg.com/originals/3b/30/19/3b301943e9cde5ef23ac02cf0fa18842.jpg" alt="Imagen de ejemplo">
+    </div>
+    <h2>Flora del Ecuador</h2>
+    <p>En Ecuador, se hallan aproximadamente el 8% de las especies de plantas vasculares registradas en el mundo y, de hecho, alrededor de 4.500 especies son consideradas endémicas. A continuación, desarrollaremos las especies de plantas del Ecuador más relevantes:
+<br><br>
+      •Orquídeas
+      Ecuador cuenta con más de 4.000 especies de orquídeas, de las cuales casi el 40% son endémicas del país. Aunque se encuentran distribuidas por todo el territorio ecuatoriano, la mayor abundancia de orquídeas se halla en la región de los Andes. Algunas especies de orquídeas endémicas del Ecuador son: Dracula vampira, Lepanthes caprimulgus y Ecuadorella harlingii.
+      <br><br>
+      •Palmas
+      Las palmas se distribuyen por toda la superficie ecuatoriana. Por ejemplo, la tagua (Phytelephas aequatorialis) es una palma originaria del Ecuador con una amplia distribución dentro del país. En contraposición, existen otras especies de palma que son propias de las distintas regiones geográficas. La napa (Manicaria saccifera) y la ungurahua (Oenocarpus bataua) se encuentran en la región litoral, mientras que Ceroxylon amazonicum y Wettinia aequatorialis se hallan en la región amazónica.
+      <br><br>
+      •Passiflora andina
+      Esta especie, endémica del Ecuador, no tiene nombre vulgar sino que su denominación es a través de su nombre científico. Como su nombre lo indica, es propia de la región andina y, lamentablemente, se halla en peligro de extinción por la deforestación y cambios en el uso del suelo.
+      <br><br>
+      • Guayabillo
+      Conocido científicamente como Psidium galapageium, es un árbol de gran altura, endémico de la región insular, más precisamente de las Islas Galápagos. Presenta frutos de color amarillo, que a medida que maduran se tornan de color negro y flores de color blanquecino.
+      
+      Te invitamos a descubrir más sobre la Flora y fauna de las Islas Galápagos. Además, aquí puedes conocer a las Plantas en peligro de extinción en Ecuador.</p>
+      <div class="image-container">
+      <img src="https://i0.wp.com/educarplus.com/wp-content/uploads/2021/01/Fauna-y-Flora-del-Ecuador.jpg?fit=1280%2C720&ssl=1" alt="Imagen de ejemplo">
+    </div>
+      <h2>Fauna del Ecuador</h2>
+    <p>Tortugas gigantes
+      El complejo Chelonoidis nigra es un grupo de especies estrechamente relacionadas, que engloba a 10 especies de tortugas gigantes características de las Islas Galápagos. Se trata de especies de quelonios terrestres de gran tamaño que pueden vivir por más de 200 años. Descubre más sobre Qué animales viven más años leyendo este otro post.
+      <br><br>
+      •Iguana marina
+      Endémica de las Islas Galápagos, esta especie (Amblyrhynchus cristatus) es la única iguana actual que depende de ecosistemas marinos para vivir. Se alimentan exclusivamente de algas y se destaca por su capacidad de nadar.
+      <br><br>
+      • Rana túngara Tsáchila
+      Esta especie (Engystomops coloradorum) es endémica del oeste del Ecuador y habita los bosques tropicales húmedos. Su aspecto es sumamente particular, ya que es de color marrón con protuberancias irregulares en su dorso.
+      <br><br>
+      •Colibrí de esmeraldas
+      Este ejemplar (Chaetocercus berlepschi) se halla exclusivamente en Ecuador, precisamente en los bosques húmedos tropicales. Se destaca por su coloración color esmeralda, de allí su nombre, aunque su cuello presenta una tonalidad azulada y su panza es blanquecina.
+      <br><br>
+      •Arnejo
+      Esta especie de vizcacha (Lagidium ahuacaense) se halla únicamente al sur del territorio ecuatoriano y se registró una población que habita la zona rocosa del Cerro El Ahuaca. Con respecto a su anatomía, es de tamaño medio con un pelaje de color gris-marrón y más claro hacia las partes inferiores.</p>
+      <div class="image-container">
+      <img src="https://4.bp.blogspot.com/-fHJ50NKvxPw/Ta8Q1DlWikI/AAAAAAAAdFw/GrQ9zKctl6c/s1600/Los%2Banimales%2Bmas%2Braros%2By%2Bpeculiares%2Bdel%2Bmundo.jpg" alt="Imagen de ejemplo">
+    </div>
+  </div>
 </ion-content>

@@ -1,67 +1,29 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-.list-formulario{
-  margin-bottom: 20px;
-  border: 1px solid #fff;
-}
-ion-title {
-text-align: center;
-
-}
-ion-card{
-  width: 35%;
-  float: left;
-  background-color: #e7ec89;
-}
-.comida{
-  width: 50%;
-  height: auto;
-  box-shadow: 2px 2px 5px #999;
-
-}
-#img1{
-  width: 100%;
-}
-.btn1{
-  width: 100%;
-}
-@media only screen and (max-width: 600px) {
-  .comida{
-    width: 100%;
+ion-header {
+  ion-toolbar {
+    ion-title {
+      text-align: center;
+    }
   }
-  .btn1{
-    width: 80%;
+}
+
+.container {
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 10px;
   }
-  ion-card{
-    width: 40%;
+
+  p {
+    margin-bottom: 20px;
   }
-  ion-list{
-    width: 100%;
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    img {
+      max-width: 50%;
+    }
   }
 }

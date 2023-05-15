@@ -4,13 +4,13 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
-    apiKey: "AIzaSyDcOqTD1IgJGqFY9DYtoKvlRBwZab36K0k",
-    authDomain: "p4insumo1caponandy.firebaseapp.com",
-    projectId: "p4insumo1caponandy",
-    storageBucket: "p4insumo1caponandy.appspot.com",
-    messagingSenderId: "251991801083",
-    appId: "1:251991801083:web:753670bb31cda2a06e045e"
+  firebaseConfig : {
+    apiKey: "AIzaSyCA3w1U4jXRIEvZsvRdO5oFlFZYMdL4KEI",
+    authDomain: "databasecapon.firebaseapp.com",
+    projectId: "databasecapon",
+    storageBucket: "databasecapon.appspot.com",
+    messagingSenderId: "66204446541",
+    appId: "1:66204446541:web:1d0830b87a58975b2a1104"
   }
 };
 
